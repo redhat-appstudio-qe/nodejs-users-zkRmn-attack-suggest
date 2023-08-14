@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-sefx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-hgaw-tenant/nodejs-users/simple-nodejs-app-sefx@sha256:61c39533079449d345824135e3a922dde55166034b95003e46f7bad0f41d46a3
+        name: my-nodejs
+        resources: {}
+status: {}
